@@ -1,0 +1,70 @@
+# # angka = 11
+
+# # if angka < 10: # Kondisi percabangan IF
+# #     print("Angka kurang dari 10")
+
+
+# # umur = int(input("Masukkan umur: ")) # Input umur
+
+# # # Misalkan, umur = 17
+
+# # if umur >= 17:
+# #     print("Kamu sudah bisa membuat KTP") # Blok if dijalankan karena kondisi True
+# # else:
+# #     print("Kamu belum bisa membuat KTP") # Blok else tidak dijalankan
+
+
+# # Input jenis kendaraan dari user
+# kendaraan = input("Masukkan jenis kendaraan anda: ").lower()
+# # Misalnya, kendaraan = "mobil"
+# # Percabangan
+
+# if kendaraan == "mobil":
+#     tarif_parkir = 10000
+# elif kendaraan == "motor":
+#     tarif_parkir = 5000
+# else:
+#     tarif_parkir = 15000
+# # Menampilkan tarif parkir yang harus dibayar
+# print("Tarif parkir yang harus dibayar:", tarif_parkir)
+
+# # # variabel = nilai_jika_true if kondisi else nilai_jika_false
+
+# # # Bentuk Awal Percabangan IF/ELSE
+# # umur = 20
+# # if umur >= 18:
+# #     status = "Dewasa"
+# # else:
+# #     status = "Belum Dewasa"
+
+# # umur = 20
+# # status = "Dewasa" if umur >= 18 else "Belum Dewasa"
+
+# # nilai = int(input ("Masukkan nilai: "))
+
+# # if nilai >= 10:
+# #     if nilai >= 20:
+# #         if nilai >= 30:
+# #             print("Angka Besar")
+# #         print("Angka Sedang")
+# #     print("Angka Kecil")
+
+
+
+# no 1
+umur = int(input("Masukkan umur: "))
+status = "Boleh masuk" if umur > 16 else "Gak boleh masuk"
+
+print(status)
+
+
+
+#NOmor 2
+total_pembelian = int(input("Masukkan total pembelian: "))
+
+if total_pembelian > 200000:
+    print("Anda dapat diskon 30%")
+elif total_pembelian > 100000:
+    print("Anda dapat diskon 10%")
+else: 
+    print("Anda gak dapat diskon")

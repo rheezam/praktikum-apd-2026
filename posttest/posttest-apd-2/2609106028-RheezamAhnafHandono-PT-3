@@ -1,0 +1,109 @@
+import sys
+
+
+
+print("=========================================================================================================================")
+print("SPBU KEReN GoKIL mANTAP".center(100))
+print("=========================================================================================================================")
+
+NamaPanggilan = input("Masukkan Nama Panggilan dan Nim (Format : Nama)" )
+Nim = int(input("Masukkan Nim (Format : **)"))
+
+if NamaPanggilan == "Rheezam" and Nim == 28:
+    print("Selamat login anda berhasil, lanjut ke menu berikutnya")
+
+else:
+    print("Maaf, login anda gagal, silahkan coba lagi")
+    sys.exit()
+
+print("=========================================================================================================================")
+print("Pilih Jenis BBM".center(100))
+print("=========================================================================================================================")
+
+List_JenisBBM = {
+    "1. Pertalite": 10000,
+    "2. Pertamax": 12500,
+    "3. Pertamax_Turbo": 15000
+}
+
+print(List_JenisBBM)
+print("=========================================================================================================================")
+
+
+Milih_JenisBBM = int(input("Pilih Jenis BBM 1,2,3 :"))
+
+if Milih_JenisBBM == 1:
+    Harga = List_JenisBBM["1. Pertalite"]
+    JenisBBM = "Pertalite"
+    print("Jenis BBM :", JenisBBM)
+    print("Harga Pertalite adalah : ", Harga)
+elif Milih_JenisBBM == 2:
+    Harga = List_JenisBBM["2. Pertamax"]
+    JenisBBM = "Pertamax"
+    print("Jenis BBM :", JenisBBM)
+    print("Harga Pertamax adalah : ", Harga)
+elif Milih_JenisBBM == 3:
+    Harga = List_JenisBBM["3. Pertamax_Turbo"]
+    JenisBBM = "Pertamax_Turbo"
+    print("Jenis BBM :", JenisBBM)
+    print("Harga Pertamax_Turbo adalah : ", Harga)
+else:
+    print("Pilihan tidak ada di menu ya")
+    sys.exit()
+
+
+Isi_LiterBBM = int(input("Masukkan jumlah liter BBM yang ingin diisi :"))
+
+
+if Isi_LiterBBM >= 10:
+    
+    print("Anda Mendapatkan Diskon 10% ya")
+    PersenDiskon = 0.10
+    TotalHarga = Harga * Isi_LiterBBM
+    print("Total Harga : ", TotalHarga)
+    Diskon = PersenDiskon * TotalHarga
+    print("Diskon 10%: ", Diskon)
+
+elif Isi_LiterBBM >= 5:
+    print("Anda Mendapatkan Diskon 5% ya")
+    PersenDiskon = 0.05
+    TotalHarga = Harga * Isi_LiterBBM
+    print("Total Harga : ", TotalHarga)
+    Diskon = PersenDiskon * TotalHarga
+    print("Diskon 5%: ", Diskon)
+
+else:
+    print("lu gak dapat diskon")
+    PersenDiskon = 0
+    TotalHarga = Harga * Isi_LiterBBM
+    print("Total Harga : ", TotalHarga)
+    Diskon = PersenDiskon * TotalHarga
+    print("Diskon 0%: ", Diskon)
+
+MemberBukan = input("Apakah anda member? (ya/tidak) :")
+if MemberBukan == "ya":
+    print("ada member loh ya, selamat anda dapat diskon tambahan 2%")
+    Diskon2 = 0.98 # 100% - 2%
+    TotalBayar = (TotalHarga - Diskon) * Diskon2
+    print("Total Bayar : ", TotalBayar)
+elif MemberBukan == "tidak":
+    print("anda tidak dapat diskon tambahan 2% ya")
+    TotalBayar = TotalHarga - Diskon
+    print("Total Bayar : ", TotalBayar)
+
+print("=========================================================================================================================")
+
+print("Struk Pembelian BBM".center(100))
+
+print("=========================================================================================================================")
+print("Nama Pembeli  :", NamaPanggilan)
+print("NIM Pembeli   :", Nim)
+print("Jenis BBM     :", JenisBBM)
+print("Jumlah Liter  :", Isi_LiterBBM, "Liter")
+print("Total Harga   : Rp", TotalHarga)
+print("Persen Diskon :", PersenDiskon * 100, "%")
+print("Diskon        : Rp", Diskon)
+print("Member        :", MemberBukan)
+print("Total Bayar   : Rp", TotalBayar)
+print("Member Kena tambahan diskon 2%")
+print("=========================================================================================================================")
