@@ -1,0 +1,116 @@
+# # # kartu = {"merah", "hijau", "biru", "merah"}
+# # # kartu.discard("kuning")
+# # # kartu.remove("merah")
+
+# # # print(kartu)
+
+# # # aslab1 = {"fina", "shasha", "risma"}
+# # # aslab2 = {"larry", "attar", "haekal"}
+# # # gabung = aslab1.union(aslab2)
+# # # print(gabung)
+
+
+# # # Matkul = {
+
+# # #     "Matkul_ganjil" : "kalkulus",
+# # #     "Matkul_genap" : "statistik"
+
+# # # }
+
+# # # print(Matkul["Matkul_ganjil"])
+# # # print(Matkul)
+
+# # # Biodata = {
+# # # "Nama" : "Siti Julpa",
+# # # "NIM" : 25091060,
+# # # "KRS" : ["Struktur Data", "Basis Data"],
+# # # "Mahasiswa_Aktif" : True,
+# # # "Instagram" : "Julpatarr"
+# # # }
+
+# # # print(Biodata["Instagram"])
+# # # print(Biodata["KRS"][0])
+# # # print(Biodata.get("KRS")[0])
+
+# # # game = {
+# # # "pou" : "chill",
+# # # "genshin impact" : "action",
+# # # "valorant" : "fps",
+# # # "minecraft" : "sandbox",
+# # # "mobile legend" : "moba"
+# # # }
+# # # for i in game:
+# # #     print(i)
+# # # for i in game.keys():
+# # #     print(i)
+# # # for i in game.values():
+# # #     print(i)
+
+
+# # # game = {
+# # # "pou" : "chill",
+# # # "genshin impact" : "action",
+# # # "valorant" : "fps",
+# # # "minecraft" : "sandbox",
+# # # "mobile legend" : "moba"
+# # # }
+# # # for keys, values in game.items():
+# # #     print(f"{keys} adalah jenis game {values}")
+
+
+# # game = {
+# # "pou" : "chill",
+# # "genshin impact" : "action",
+# # "valorant" : "fps",
+# # "minecraft" : "sandbox",
+# # "mobile legend" : "moba"
+# # }
+
+# # game["resident evil"] = "horror"
+# # print(game)
+
+# # coba = game.pop("pou")
+# # print(coba)
+# # print(game)
+# # game.clear()
+# # print(game)
+# # print(len(game))
+
+# # menu = {
+# # "ayam geprek" : 15000,
+# # "ayam goreng" : 13000,
+# # "ayam bakar" : 17000,
+# # "nasi goreng" : 12000,
+# # "mie goreng" : 10000
+# # }
+# # menu_baru = menu.copy()
+# # menu_baru["nasi goreng"] = 15000
+# # print(menu)
+# # print(menu_baru)
+
+# # key = "ayam geprek", "ayam goreng", "ayam bakar",
+# # value = 12000
+# # menu = dict.fromkeys(key, value)
+# # print(menu)
+
+# data_siswa = {
+#     "siswa1" : {
+#         "nama": "Johan",
+#         "kelas": "A2",
+#         "nilai": 95
+#     },
+
+#     "siswa2" : {
+#         "nama": "Niyah",
+#         "kelas": "A2",
+#         "nilai": 96
+#     }
+# }
+
+# print(data_siswa["siswa1"]["nama"])
+
+poli_umum = {"Andi", "Budi", "Citra", "Doni"}
+poli_gigi = {"Citra", "Doni", "Eka", "Fani"}
+gabung = poli_umum.union(poli_gigi)
+
+print(gabung)
